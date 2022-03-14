@@ -281,7 +281,7 @@
   resolved "https://registry.npmmirror.com/@types/node/download/@types/node-17.0.9.tgz#0b7f161afb5b1cc12518d29b2cdc7175d5490628"
   integrity sha512-5dNBXu/FOER+EXnyah7rn8xlNrfMOQb/qXnw4NQgLkCygKBKhdmF/CA5oXVOKZLBEahw8s2WP9LxIcN/oDDRgQ==
 
-"@types/prop-types@*", "@types/prop-types@^15.7.3":
+"@types/prop-types@*", "@types/prop-types@^15.0.0", "@types/prop-types@^15.7.3":
   version "15.7.4"
   resolved "https://registry.npmmirror.com/@types/prop-types/download/@types/prop-types-15.7.4.tgz#fcf7205c25dff795ee79af1e30da2c9790808f11"
   integrity sha1-/PcgXCXf95Xuea8eMNosl5CAjxE=
@@ -1681,16 +1681,17 @@ mdast-util-from-markdown@^1.0.0:
     unist-util-stringify-position "^3.0.0"
     uvu "^0.5.0"
 
-mdast-util-to-hast@^11.0.0:
-  version "11.3.0"
-  resolved "https://registry.npmmirror.com/mdast-util-to-hast/download/mdast-util-to-hast-11.3.0.tgz#ea9220617a710e80aa5cc3ac7cc9d4bb0440ae7a"
-  integrity sha1-6pIgYXpxDoCqXMOsfMnUuwRArno=
+mdast-util-to-hast@^12.1.0:
+  version "12.1.1"
+  resolved "https://registry.yarnpkg.com/mdast-util-to-hast/-/mdast-util-to-hast-12.1.1.tgz#89a2bb405eaf3b05eb8bf45157678f35eef5dbca"
+  integrity sha512-qE09zD6ylVP14jV4mjLIhDBOrpFdShHZcEsYvvKGABlr9mGbV7mTlRWdoFxL/EYSTNDiC9GZXy7y8Shgb9Dtzw==
   dependencies:
     "@types/hast" "^2.0.0"
     "@types/mdast" "^3.0.0"
     "@types/mdurl" "^1.0.0"
     mdast-util-definitions "^5.0.0"
     mdurl "^1.0.0"
+    micromark-util-sanitize-uri "^1.0.0"
     unist-builder "^3.0.0"
     unist-util-generated "^2.0.0"
     unist-util-position "^4.0.0"
@@ -2599,12 +2600,13 @@ react-markdown-editor-lite@^1.3.2:
     eventemitter3 "^4.0.0"
     uuid "^8.3.2"
 
-react-markdown@^7.1.2:
-  version "7.1.2"
-  resolved "https://registry.npmmirror.com/react-markdown/download/react-markdown-7.1.2.tgz#c9fa9d1c87e24529f028e1cdf731e81ccdd8e547"
-  integrity sha512-ibMcc0EbfmbwApqJD8AUr0yls8BSrKzIbHaUsPidQljxToCqFh34nwtu3CXNEItcVJNzpjDHrhK8A+MAh2JW3A==
+react-markdown@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/react-markdown/-/react-markdown-8.0.1.tgz#683b5225fccbdd7eca76aa89b621894a317dd4d6"
+  integrity sha512-g78B0KtUk8oDRt59fX9SWhMikn3/qYcQW+aVMxdIulcjCNeecAZNOmR8uXy5p4bhbuPIS8gZly81bF4pAQWYXw==
   dependencies:
     "@types/hast" "^2.0.0"
+    "@types/prop-types" "^15.0.0"
     "@types/unist" "^2.0.0"
     comma-separated-tokens "^2.0.0"
     hast-util-whitespace "^2.0.0"
@@ -2612,7 +2614,7 @@ react-markdown@^7.1.2:
     property-information "^6.0.0"
     react-is "^17.0.0"
     remark-parse "^10.0.0"
-    remark-rehype "^9.0.0"
+    remark-rehype "^10.0.0"
     space-separated-tokens "^2.0.0"
     style-to-object "^0.3.0"
     unified "^10.0.0"
@@ -2675,14 +2677,14 @@ remark-parse@^10.0.0:
     mdast-util-from-markdown "^1.0.0"
     unified "^10.0.0"
 
-remark-rehype@^9.0.0:
-  version "9.1.0"
-  resolved "https://registry.npmmirror.com/remark-rehype/download/remark-rehype-9.1.0.tgz#e4b5b6e19c125b3780343eb66c3e9b99b0f06a81"
-  integrity sha1-5LW24ZwSWzeAND62bD6bmbDwaoE=
+remark-rehype@^10.0.0:
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/remark-rehype/-/remark-rehype-10.1.0.tgz#32dc99d2034c27ecaf2e0150d22a6dcccd9a6279"
+  integrity sha512-EFmR5zppdBp0WQeDVZ/b66CWJipB2q2VLNFMabzDSGR66Z2fQii83G5gTBbgGEnEEA0QRussvrFHxk1HWGJskw==
   dependencies:
     "@types/hast" "^2.0.0"
     "@types/mdast" "^3.0.0"
-    mdast-util-to-hast "^11.0.0"
+    mdast-util-to-hast "^12.1.0"
     unified "^10.0.0"
 
 resize-observer-polyfill@^1.5.0, resize-observer-polyfill@^1.5.1:
